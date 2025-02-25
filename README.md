@@ -1,5 +1,8 @@
-# TreeRingRF
-Tree-ring random forest (RF) proejct
+# Tree-ring random forest (RF) proejct
+
+NAU Ecological Synthesis Lab
+
+#### Description of files and directories
 
  - species specific tree ring and climate data tables are located in the /data directory
  - `rf_run.R` runs the random forests
