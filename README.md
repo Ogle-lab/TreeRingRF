@@ -2,6 +2,8 @@
 
 #### Data, code, and documentation in this repository accompanies the manucript: "Identifying the climate conditions associated with extreme growth states in trees across the western United States" by Kiona Ogle, Jarrett J Barber, Brandon Strange, Drew Peltier, Rohan Boone, and Alicia Formanack.
 
+#### Managed by the Ecological Synthesis Lab at Northern Arizona University.
+
 #### Description of files and directories
 
  - species specific tree ring and climate data tables are located in the /data directory
