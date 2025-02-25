@@ -19,8 +19,12 @@
 # install.packages("randomForestSRC")
 library(randomForestSRC)
 
-# specify species
-species <- "QUDG"
+# *SPECIFY OUTPUT DIRECTORY* #
+outdir <- "" # do not put a / at the end of the directory
+dir.exists(outdir)
+
+# *SPECIFY SPECIES* #
+species <- "QUDG" 
 # read in species-specific data table
 dat<- read.csv(paste0("data/", species, "_table_grouped_climate.csv"))[,-1]
 
@@ -44,7 +48,7 @@ mod1c<- rfsrc(std ~., data=dat[,vnames1c], na.action="na.omit",
               importance = "permute", block.size=1)
 
 # save the rfsrc object
-save(mod1c, file = paste0("rf_objects/", species, "_rf1c.R"))
+save(mod1c, file = paste0(outdir, "/", species, "_rf1c.R"))
 
 # remove from environment
 rm(mod1c)
@@ -62,7 +66,7 @@ mod2d<- rfsrc(std ~., data=dat[,vnames2d], na.action="na.omit",
               importance = "permute", block.size=1)
 
 # save the rfsrc object
-save(mod2d, file = paste0("rf_objects/", species, "_rf2d.R"))
+save(mod2d, file = paste0(outdir, "/", species, "_rf2d.R"))
 
 # remove from environment
 rm(mod2d)
@@ -114,7 +118,7 @@ mod3c <- imbalanced.rfsrc(rwlo ~., data=bindat[vnameslo], na.action="na.omit",
                           perf.type = "misclass")
 
 # save the rfsrc object
-save(mod3c, file = paste0("rf_objects/", species, "_rf3c.R"))
+save(mod3c, file = paste0(outdir, "/", species, "_rf3c.R"))
 
 # remove from the environment
 rm(mod3c)
@@ -133,7 +137,7 @@ mod3d<- imbalanced.rfsrc(rwlo ~., data=bindat[vnameslod], na.action="na.omit",
                          perf.type = "misclass")
 
 # save the rfsrc object
-save(mod3d, file = paste0("rf_objects/", species, "_rf3d.R"))
+save(mod3d, file = paste0(outdir, "/", species, "_rf3d.R"))
 
 # remove from the environment
 rm(mod3d)
@@ -149,7 +153,7 @@ mod5c<- imbalanced.rfsrc(rwhi  ~., data=bindat[vnameshi], na.action="na.omit",
                          perf.type = "misclass")
 
 # save the rfsrc object
-save(mod5c, file = paste0("rf_objects/", species, "_rf5c.R"))
+save(mod5c, file = paste0(outdir, "/", species, "_rf5c.R"))
 
 # remove drom the environment
 rm(mod5c)
@@ -168,7 +172,7 @@ mod5d<- imbalanced.rfsrc(rwhi  ~., data=bindat[vnameshid], na.action="na.omit",
                          perf.type = "misclass")
 
 # save the rfsrc object
-save(mod5d, file = paste0("rf_objects/", species, "_rf5d.R"))
+save(mod5d, file = paste0(outdir, "/", species, "_rf5d.R"))
 
 # remove from the environment
 rm(mod5d)
