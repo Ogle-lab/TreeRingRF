@@ -13,13 +13,15 @@
 
 Scripts are plug-and-play. Be sure to specify necessary variables such as species and output directory prior to running. Lines in the code where variables must be specified are indicated in the commented sections with all-caps and asterisks.
 
-### Random Forest model information
+### Random Forest model details
 
-|Model|Species|Model Type    |Growth category|Across- or within-site percentile|Climate Resolution|Includes temporally varying climate?|Includes site-level mean climate?|Includes site ID|Includes lag-width|Includes Year|
-|-----|-------|--------------|---------------|---------------------------------|------------------|------------------------------------|---------------------------------|----------------|------------------|-------------|
-|RF1c |All    |Regression    |RWI            |N/A                              |Seasonal          |No                                  |Yes                              |Yes             |Yes               |Yes          |
-|RF2d |All    |Regression    |RWI            |N/A                              |Seasonal          |No                                  |Yes                              |No              |No                |No           |
-|RF3c |All    |Classification|Low-growth     |Across                           |Seasonal          |No                                  |Yes                              |Yes             |Yes               |Yes          |
-|RF3d |All    |Classification|Low-growth     |Across                           |Seasonal          |No                                  |Yes                              |No              |No                |No           |
-|RF5c |All    |Classification|High-growth    |Across                           |Seasonal          |No                                  |Yes                              |Yes             |Yes               |Yes          |
-|RF5d |All    |Classification|High-growth    |Across                           |Seasonal          |No                                  |Yes                              |No              |No                |No           |
+Summary of random forest (RF) models that are implemented by `rf_run.R` 
+
+|Model ID|RF model type|Full or climate-only model|Focal growth variable|Includes site ID|Includes lag-width|Includes Year|
+|--------|-------------|--------------------------|---------------------|----------------|------------------|-------------|
+|RF1c    |Regression   |Full                      |RWI                  |Yes             |Yes               |Yes          |
+|RF2d    |Regression   |Climate-only              |RWI                  |No              |No                |No           |
+|RF3c    |Classification|Full                      |Low-growth           |Yes             |Yes               |Yes          |
+|RF3d    |Classification|Climate-only              |Low-growth           |No              |No                |No           |
+|RF5c    |Classification|Full                      |High-growth          |Yes             |Yes               |Yes          |
+|RF5d    |Classification|Climate-only              |High-growth          |No              |No                |No           |
