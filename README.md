@@ -1,6 +1,6 @@
-# Tree-ring random forest (RF) proejct
-
-NAU Ecological Synthesis Lab
+# Data, code, and documentation in this repository accompanies the manucript:
+# "Identifying the climate conditions associated with extreme growth states in trees across the western United States"
+# by Kiona Ogle, Jarrett J Barber, Brandon Strange, Drew Peltier, Rohan Boone, and Alicia Formanack.
 
 #### Description of files and directories
 
