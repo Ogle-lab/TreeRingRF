@@ -1,7 +1,6 @@
 # Project: Climate factors governing extreme tree growth
 
-#### Data, code, and documentation in this repository accompanies the manucript: "Identifying the climate conditions associated with extreme growth states in trees across the western United States"
-#### by Kiona Ogle, Jarrett J Barber, Brandon Strange, Drew Peltier, Rohan Boone, and Alicia Formanack.
+#### Data, code, and documentation in this repository accompanies the manucript: "Identifying the climate conditions associated with extreme growth states in trees across the western United States" by Kiona Ogle, Jarrett J Barber, Brandon Strange, Drew Peltier, Rohan Boone, and Alicia Formanack.
 
 #### Description of files and directories
 
