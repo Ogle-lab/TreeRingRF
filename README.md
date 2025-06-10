@@ -1,6 +1,6 @@
 # Project: Climate factors governing extreme tree growth
 
-#### Data, code, and documentation in this repository accompanies the manucript: "Identifying the climate conditions associated with extreme growth states in trees across the western United States" by Kiona Ogle, Jarrett J Barber, Brandon Strange, Rohan Boone, Alicia Formanack, and Drew Peltier.
+#### Data, code, and documentation in this repository accompanies the manucript: "Identifying the climate conditions associated with extreme growth states in trees across the western United States" by Kiona Ogle, Jarrett J Barber, Brandon Strange, Rohan Boone, Alicia Formanack, and Drew Peltier for *Global Change Biology*.
 
 #### Managed by the Ecological Synthesis Lab at Northern Arizona University.
 
