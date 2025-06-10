@@ -2,6 +2,8 @@
 
 #### Data, code, and documentation in this repository accompanies the manucript: "Identifying the climate conditions associated with extreme growth states in trees across the western United States" by Kiona Ogle, Jarrett J Barber, Brandon Strange, Rohan Boone, Alicia Formanack, and Drew Peltier for *Global Change Biology*.
 
+[![DOI](https://zenodo.org/badge/936321352.svg)](https://doi.org/10.5281/zenodo.15635984)
+
 #### Managed by the Ecological Synthesis Lab at Northern Arizona University.
 
 ### Description of files and directories
